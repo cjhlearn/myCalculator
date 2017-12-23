@@ -9,30 +9,31 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends Activity implements OnClickListener{
-    Button btn_0;
-    Button btn_1;
-    Button btn_2;
-    Button btn_3;
-    Button btn_4;
-    Button btn_5;
-    Button btn_6;
-    Button btn_7;
-    Button btn_8;
-    Button btn_9;
+    //数字键
+    private Button btn_0;
+    private Button btn_1;
+    private Button btn_2;
+    private Button btn_3;
+    private Button btn_4;
+    private Button btn_5;
+    private Button btn_6;
+    private Button btn_7;
+    private Button btn_8;
+    private Button btn_9;
+    //算数运算符
+    private Button btn_divide;
+    private Button btn_multiply;
+    private Button btn_minus;
+    private Button btn_add;
+    private Button btn_equal;
+    //功能键及小数点
+    private Button btn_point;
+    private Button btn_clear;
+    private Button btn_del;
+    //显示
+    private EditText edit_text_top;
 
-    Button btn_divide;
-    Button btn_multiply;
-    Button btn_minus;
-    Button btn_add;
-    Button btn_equal;
-
-    Button btn_point;
-    Button btn_clear;
-    Button btn_del;
-
-    EditText edit_text_top;
-
-    boolean flg=false;      //用于标明，对于计算过后的数值的操作
+    private boolean flg=false;      //用于标明，对于计算过后的数值的操作
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
